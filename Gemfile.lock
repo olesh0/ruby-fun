@@ -1,0 +1,14 @@
+GEM
+  specs:
+    paint (1.0.1)
+    terminal-menu (1.0.1)
+      paint (~> 1.0, >= 1.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  terminal-menu
+
+BUNDLED WITH
+   1.17.2
