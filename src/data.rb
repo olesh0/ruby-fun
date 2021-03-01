@@ -12,8 +12,12 @@ def update_list(existing_todos = [])
   puts existing_todos
 
   file_write = File.new(DATA_STORE_FILE, 'w')
+  current_time = Time.new
 
-  data = { 'todos' => existing_todos }
+  data = {
+    'todos' => existing_todos,
+    'last_updated': current_time,
+  }
 
   file_write.puts(JSON.pretty_generate data)
   file_write.close
