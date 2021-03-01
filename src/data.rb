@@ -2,7 +2,7 @@ DATA_STORE_FILE = './data/main.json'
 
 def get_todos_list()
   file = File.read(DATA_STORE_FILE)
-  data = JSON.parse(file.to_s)
+  data = JSON.parse(file)
 
   return data['todos']
 end
