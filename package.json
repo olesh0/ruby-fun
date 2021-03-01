@@ -1,0 +1,11 @@
+{
+  "name": "ruby-fun",
+  "version": "1.0.0",
+  "main": "src/main.rb",
+  "repository": "https://github.com/olesh0/ruby-fun.git",
+  "author": "olesh <olegkirashchuk@gmail.com>",
+  "scripts": {
+    "start": "ruby src/main.rb"
+  },
+  "license": "MIT"
+}
