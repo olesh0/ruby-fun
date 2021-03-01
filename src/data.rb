@@ -12,7 +12,10 @@ def update_list(existing_todos = [])
   puts existing_todos
 
   file_write = File.new(DATA_STORE_FILE, 'w')
-  file_write.puts(JSON.generate({ todos: existing_todos }))
+
+  data = { 'todos' => existing_todos }
+
+  file_write.puts(JSON.pretty_generate data)
   file_write.close
 
   return existing_todos
